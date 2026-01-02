@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - English Center Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="header-content">
+            <h1 class="product-name">English Center Dashboard</h1>
+            <nav class="page-nav">
+                <a href="overview.html" class="nav-link active">Overview</a>
+                <a href="student_detail.html" class="nav-link">Student Detail</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="overview.html" class="sidebar-link active">
+                    <span class="icon">📊</span>
+                    Overview
+                </a>
+                <a href="student_detail.html" class="sidebar-link">
+                    <span class="icon">👤</span>
+                    Student Detail
+                </a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="filter-bar">
+                <select class="filter-input">
+                    <option>Last 30 Days</option>
+                    <option>Last 7 Days</option>
+                    <option>Custom Range</option>
+                </select>
+                <select class="filter-input">
+                    <option>All Teachers</option>
+                    <option>Teacher A</option>
+                    <option>Teacher B</option>
+                </select>
+                <select class="filter-input">
+                    <option>All Time Slots</option>
+                    <option>Morning (8-12)</option>
+                    <option>Afternoon (12-17)</option>
+                    <option>Evening (17-21)</option>
+                </select>
+                <button class="filter-button">Apply Filters</button>
+            </div>
+
+            <section class="section">
+                <h2 class="section-title">Key Performance Indicators</h2>
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-label">Total Sessions Completed</div>
+                        <div class="kpi-value">1,247</div>
+                        <div class="kpi-change positive">+12% vs last period</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Total Teaching Hours</div>
+                        <div class="kpi-value">2,494</div>
+                        <div class="kpi-change positive">+8% vs last period</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Completion Rate</div>
+                        <div class="kpi-value">94.3%</div>
+                        <div class="kpi-change positive">+2.1% vs last period</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">On-time Rate</div>
+                        <div class="kpi-value">87.5%</div>
+                        <div class="kpi-change negative">-1.2% vs last period</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Avg Session Rating</div>
+                        <div class="kpi-value">4.6 / 5</div>
+                        <div class="kpi-change positive">+0.2 vs last period</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Low-rating %</div>
+                        <div class="kpi-value">8.2%</div>
+                        <div class="kpi-change negative">+1.5% vs last period</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Rewards Issued</div>
+                        <div class="kpi-value">342</div>
+                        <div class="kpi-change positive">+18% vs last period</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Operational Health</h2>
+                <div class="charts-row">
+                    <div class="chart-card large">
+                        <h3 class="chart-title">Teaching Hours by Day</h3>
+                        <div class="chart-placeholder line-chart">
+                            <div class="placeholder-label">Line Chart Placeholder</div>
+                            <div class="placeholder-subtitle">Daily teaching hours trend over selected period</div>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Expected Duration</h3>
+                        <div class="mini-kpi">
+                            <div class="mini-kpi-value">91.7%</div>
+                            <div class="mini-kpi-label">Sessions within Expected Duration</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-title">Sessions by Day-of-Week × Hour</h3>
+                    <div class="chart-placeholder heatmap">
+                        <div class="placeholder-label">Heatmap Placeholder</div>
+                        <div class="placeholder-subtitle">Session distribution across weekdays and hours</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Quality Metrics</h2>
+                <div class="charts-row">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Avg Rating Trend</h3>
+                        <div class="chart-placeholder line-chart">
+                            <div class="placeholder-label">Line Chart Placeholder</div>
+                            <div class="placeholder-subtitle">Average rating over time</div>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Avg Rating by Teacher</h3>
+                        <div class="chart-placeholder bar-chart">
+                            <div class="placeholder-label">Bar Chart Placeholder</div>
+                            <div class="placeholder-subtitle">With sample size (n) per teacher</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-title">Top Keywords from Teacher Comments</h3>
+                    <div class="keywords-box">
+                        <span class="keyword">engaged</span>
+                        <span class="keyword">improvement</span>
+                        <span class="keyword">pronunciation</span>
+                        <span class="keyword">grammar</span>
+                        <span class="keyword">vocabulary</span>
+                        <span class="keyword">confident</span>
+                        <span class="keyword">participation</span>
+                        <span class="keyword">homework</span>
+                        <span class="keyword">fluency</span>
+                        <span class="keyword">progress</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Action List: At-risk Students</h2>
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Student</th>
+                                <th>Main Teacher</th>
+                                <th>Sessions Remaining</th>
+                                <th>Last Session Date</th>
+                                <th>Avg Rating (Last 5)</th>
+                                <th>Rating Trend</th>
+                                <th>On-time Rate</th>
+                                <th>Risk</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Sarah Johnson</strong></td>
+                                <td>Emily Chen</td>
+                                <td>8</td>
+                                <td>Dec 28, 2024</td>
+                                <td>2.8</td>
+                                <td><span class="trend negative">↓ -0.6</span></td>
+                                <td>72%</td>
+                                <td><span class="badge badge-high">High</span></td>
+                                <td><a href="student_detail.html" class="action-link">View Student</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Michael Zhang</strong></td>
+                                <td>Robert Kim</td>
+                                <td>12</td>
+                                <td>Dec 30, 2024</td>
+                                <td>3.2</td>
+                                <td><span class="trend negative">↓ -0.4</span></td>
+                                <td>65%</td>
+                                <td><span class="badge badge-high">High</span></td>
+                                <td><a href="student_detail.html" class="action-link">View Student</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lisa Martinez</strong></td>
+                                <td>Emily Chen</td>
+                                <td>15</td>
+                                <td>Dec 29, 2024</td>
+                                <td>3.4</td>
+                                <td><span class="trend neutral">→ 0.0</span></td>
+                                <td>81%</td>
+                                <td><span class="badge badge-medium">Medium</span></td>
+                                <td><a href="student_detail.html" class="action-link">View Student</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>David Brown</strong></td>
+                                <td>Jennifer Lee</td>
+                                <td>6</td>
+                                <td>Dec 27, 2024</td>
+                                <td>3.6</td>
+                                <td><span class="trend positive">↑ +0.2</span></td>
+                                <td>78%</td>
+                                <td><span class="badge badge-medium">Medium</span></td>
+                                <td><a href="student_detail.html" class="action-link">View Student</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Amy Wang</strong></td>
+                                <td>Robert Kim</td>
+                                <td>18</td>
+                                <td>Jan 01, 2025</td>
+                                <td>3.8</td>
+                                <td><span class="trend neutral">→ -0.1</span></td>
+                                <td>83%</td>
+                                <td><span class="badge badge-low">Low</span></td>
+                                <td><a href="student_detail.html" class="action-link">View Student</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

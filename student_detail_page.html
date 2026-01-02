@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detail - English Center Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="header-content">
+            <h1 class="product-name">English Center Dashboard</h1>
+            <nav class="page-nav">
+                <a href="overview.html" class="nav-link">Overview</a>
+                <a href="student_detail.html" class="nav-link active">Student Detail</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="overview.html" class="sidebar-link">
+                    <span class="icon">📊</span>
+                    Overview
+                </a>
+                <a href="student_detail.html" class="sidebar-link active">
+                    <span class="icon">👤</span>
+                    Student Detail
+                </a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="filter-bar">
+                <select class="filter-input">
+                    <option>Sarah Johnson</option>
+                    <option>Michael Zhang</option>
+                    <option>Lisa Martinez</option>
+                    <option>David Brown</option>
+                </select>
+                <select class="filter-input">
+                    <option>All Time</option>
+                    <option>Last 30 Days</option>
+                    <option>Last 90 Days</option>
+                </select>
+                <button class="filter-button">Load Student</button>
+            </div>
+
+            <section class="section">
+                <div class="student-header-card">
+                    <div class="student-header-main">
+                        <div class="student-info">
+                            <h2 class="student-name">Sarah Johnson</h2>
+                            <div class="student-id">ID: STU-2024-0847</div>
+                        </div>
+                        <div class="contract-info">
+                            <div class="contract-item">
+                                <span class="contract-label">Contract Sessions:</span>
+                                <span class="contract-value">30 sessions × 2 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student-header-stats">
+                        <div class="stat-item">
+                            <div class="stat-label">Sessions Completed</div>
+                            <div class="stat-value">22 / 30</div>
+                            <div class="stat-meta">8 remaining</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Hours Remaining</div>
+                            <div class="stat-value">16 hours</div>
+                            <div class="stat-meta">73% utilized</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Pace (Sessions/Week)</div>
+                            <div class="stat-value">1.8 actual</div>
+                            <div class="stat-meta warning">2.5 required</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Last Session</div>
+                            <div class="stat-value">Dec 28, 2024</div>
+                            <div class="stat-meta">5 days ago</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Next Scheduled</div>
+                            <div class="stat-value">Jan 04, 2025</div>
+                            <div class="stat-meta">3:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Timeline & Attendance</h2>
+                <div class="charts-row">
+                    <div class="chart-card large">
+                        <h3 class="chart-title">Session Duration Over Time</h3>
+                        <div class="chart-placeholder line-chart">
+                            <div class="placeholder-label">Line Chart Placeholder</div>
+                            <div class="placeholder-subtitle">Actual duration vs 2h baseline</div>
+                        </div>
+                    </div>
+                    <div class="mini-stats-column">
+                        <div class="mini-stat-card">
+                            <div class="mini-stat-value">87.5%</div>
+                            <div class="mini-stat-label">On-time Rate</div>
+                        </div>
+                        <div class="mini-stat-card">
+                            <div class="mini-stat-value">1h 54m</div>
+                            <div class="mini-stat-label">Avg Duration</div>
+                        </div>
+                        <div class="mini-stat-card">
+                            <div class="mini-stat-value">±12 min</div>
+                            <div class="mini-stat-label">Duration Variance</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-title">Check-in Lateness Minutes</h3>
+                    <div class="chart-placeholder bar-chart">
+                        <div class="placeholder-label">Bar Chart Placeholder</div>
+                        <div class="placeholder-subtitle">Minutes late per session</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Quality & Notes</h2>
+                <div class="charts-row">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Rating per Session</h3>
+                        <div class="chart-placeholder line-chart">
+                            <div class="placeholder-label">Line Chart Placeholder</div>
+                            <div class="placeholder-subtitle">Session-by-session rating trend</div>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Teacher Notes Feed</h3>
+                        <div class="filter-pills">
+                            <button class="pill active">All</button>
+                            <button class="pill">Low-rated</button>
+                            <button class="pill">Recent</button>
+                        </div>
+                        <div class="notes-feed">
+                            <div class="note-item">
+                                <div class="note-header">
+                                    <span class="note-date">Dec 28, 2024</span>
+                                    <span class="badge badge-low">2.5 ★</span>
+                                </div>
+                                <p class="note-text">Student seemed distracted and unprepared. Vocabulary retention needs work.</p>
+                            </div>
+                            <div class="note-item">
+                                <div class="note-header">
+                                    <span class="note-date">Dec 21, 2024</span>
+                                    <span class="badge badge-medium">3.0 ★</span>
+                                </div>
+                                <p class="note-text">Better engagement today. Pronunciation exercises went well.</p>
+                            </div>
+                            <div class="note-item">
+                                <div class="note-header">
+                                    <span class="note-date">Dec 14, 2024</span>
+                                    <span class="badge badge-low">2.5 ★</span>
+                                </div>
+                                <p class="note-text">Minimal participation. Suggest reviewing learning goals with student.</p>
+                            </div>
+                            <div class="note-item">
+                                <div class="note-header">
+                                    <span class="note-date">Dec 07, 2024</span>
+                                    <span class="badge badge-medium">3.5 ★</span>
+                                </div>
+                                <p class="note-text">Good session. Student completed all activities and asked thoughtful questions.</p>
+                            </div>
+                            <div class="note-item">
+                                <div class="note-header">
+                                    <span class="note-date">Nov 30, 2024</span>
+                                    <span class="badge badge-low">2.0 ★</span>
+                                </div>
+                                <p class="note-text">Arrived 15 minutes late. Struggled with grammar concepts introduced last week.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Rewards & Engagement</h2>
+                <div class="charts-row">
+                    <div class="chart-card">
+                        <h3 class="chart-title">Rewards Over Time</h3>
+                        <div class="chart-placeholder bar-chart">
+                            <div class="placeholder-label">Bar Chart Placeholder</div>
+                            <div class="placeholder-subtitle">Monthly reward distribution</div>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3 class="chart-title">Reward vs Rating</h3>
+                        <div class="chart-placeholder scatter-chart">
+                            <div class="placeholder-label">Scatter Plot Placeholder</div>
+                            <div class="placeholder-subtitle">Correlation analysis</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Recommended Actions</h2>
+                <div class="actions-panel">
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="action1" class="checkbox">
+                            <label for="action1">Call student to discuss recent engagement concerns</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="action2" class="checkbox">
+                            <label for="action2">Review and adjust teaching plan with Emily Chen</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="action3" class="checkbox">
+                            <label for="action3">Audit attendance process - multiple late arrivals detected</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="action4" class="checkbox">
+                            <label for="action4">Consider teacher reassignment if ratings don't improve</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="action5" class="checkbox">
+                            <label for="action5">Schedule contract renewal discussion (8 sessions remaining)</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="action6" class="checkbox">
+                            <label for="action6">Send study materials to improve vocabulary retention</label>
+                        </div>
+                    </div>
+                    <button class="primary-button">Create Follow-up Task</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
